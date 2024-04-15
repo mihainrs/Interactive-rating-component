@@ -1,0 +1,13 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+/*   font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700/400;
+  font-style: normal; */
