@@ -11,3 +11,33 @@
   font-optical-sizing: auto;
   font-weight: 700/400;
   font-style: normal; */
+
+  body{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--VeryDarkBlue);
+  }
+
+/* the big box */
+#container{
+  background-color:var(--DarkBlue);
+  display:flex;
+  justify-content: right;
+  align-items: right;
+  flex-direction:column;
+  padding: 2em 1em;
+  border-radius:15px;
+}
+
+/* the star */
+#star{
+  max-width:5%;
+  background-color: color-mix(in srgb, var(--VeryDarkBlue) 50%, var(--MediumGrey) 50%);
+  padding:0.5em;
+  border-radius:50%;
+  margin-bottom:1em;
+}
+
+

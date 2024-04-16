@@ -11,3 +11,73 @@
   font-optical-sizing: auto;
   font-weight: 700/400;
   font-style: normal; */
+
+  /* designing for mobile first */
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--VeryDarkBlue);
+}
+
+/* the big box */
+#container{
+  background-color:var(--DarkBlue);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  padding: 2em 1em;
+  border-radius:15px;
+}
+
+/* the choice's confirmation */
+.confirmation{
+  background-color:color-mix(in srgb, var(--VeryDarkBlue) 50%, var(--MediumGrey) 50%);
+  border-radius:20px;
+  padding:0.34em;
+  margin:2em 0;
+  color:var(--Orange);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* the thank you note */
+.thanks{
+  color:var(--White);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size:30px;
+  
+}
+
+/* the follow-up text */
+.thanks-text{
+  color:var(--LightGrey);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style:normal;
+  font-size:15px;
+  text-align: center;
+  padding:1em;
+}
+
+/*   font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700/400;
+  font-style: normal; */
+
+
+  /* desktop adjustment */
+  @media only screen and (min-width:376px){
+     #container{
+      margin:0 47em;
+     }
+  }
+    
