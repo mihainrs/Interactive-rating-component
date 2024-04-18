@@ -29,6 +29,7 @@
   flex-direction:column;
   padding: 2em 1em;
   border-radius:15px;
+  margin: 0 1em;
 }
 
 /* the star */
@@ -41,3 +42,98 @@
 }
 
 
+/* rating choices n text */
+.question{
+  color:var(--White);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size:23px;
+}
+
+.request{
+  color:var(--LightGrey);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style:normal;
+  font-size:15px;
+  text-align: left;
+  padding: 1em 0;
+}
+
+.ratings{
+  display:flex;
+  justify-content: space-between;
+}
+
+.score{
+  margin:0.5em 0 1.5em 0;
+  border:0;
+  padding:1em 1.3em;
+  border-radius:50%;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.submiterrer{
+  border:0;
+  border-radius:25px;
+  padding:1em 0;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal; 
+  font-size:15px;
+}
+
+a{
+  text-decoration:none;
+  padding:1em 8em;
+  color:var(--Orange);
+}
+
+a:hover{
+  color:var(--White);
+}
+
+
+/* button behavior */
+.score:hover{
+  color:var(--White);
+  background-color: var(--LightGrey);
+}
+
+.score:focus{
+  color:var(--White);
+  background-color: var(--Orange);
+}
+
+.submiterrer:hover{
+  color:var(--White);
+  background-color: var(--Orange);
+  animation:bubble 0.4s ease-in-out;
+  text-decoration: none;
+}
+
+/* animation */
+
+@keyframes bubble {
+  0%{ transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+/* desktop adjustments */
+@media only screen and (min-width:376px){
+  #container{
+    margin:0 48em;
+  }
+
+  a{
+    padding:1em 8em;
+  }
+}
